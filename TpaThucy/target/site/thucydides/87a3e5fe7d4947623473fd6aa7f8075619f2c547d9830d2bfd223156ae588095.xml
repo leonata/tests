@@ -1,0 +1,40 @@
+<acceptance-test-run title="Searching by keyword banana should display the corresponding article" name="searching_by_keyword_banana_should_display_the_corresponding_article" steps="4" successful="4" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="9621" timestamp="2014-08-06T12:32:50.004+03:00">
+  <user-story id="test.requirements.Application.Search.SearchByKeyword" name="Search by keyword" path="test.requirements.Application.Search">
+    <feature id="test.requirements.Application.Search" name="Search"/>
+  </user-story>
+  <tags>
+    <tag name="Search" type="feature"/>
+    <tag name="Search by keyword" type="story"/>
+  </tags>
+  <test-step result="SUCCESS" duration="1797">
+    <screenshots>
+      <screenshot image="23d6ccb8068bea225c2fa1f36dee00b4_NONE.png"/>
+      <screenshot image="a04a57fa493520a2c8ce301d935b2037_NONE.png"/>
+    </screenshots>
+    <description>Is the home page</description>
+  </test-step>
+  <test-group name="Looks for: &lt;span class=&apos;step-parameter&apos;&gt;pear&lt;/span&gt;" result="SUCCESS">
+    <screenshots>
+      <screenshot image="a04a57fa493520a2c8ce301d935b2037_NONE.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="1039">
+      <screenshots>
+        <screenshot image="8db67a8aacf55e655d953e5239322a14_NONE.png"/>
+      </screenshots>
+      <description>Enters: &lt;span class=&apos;step-parameter&apos;&gt;pear&lt;/span&gt;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="3894">
+      <screenshots>
+        <screenshot image="8db67a8aacf55e655d953e5239322a14_NONE.png"/>
+        <screenshot image="b61bfc002dc86134ca11f1955d333f73_NONE.png"/>
+      </screenshots>
+      <description>Starts search</description>
+    </test-step>
+  </test-group>
+  <test-step result="SUCCESS" duration="1465">
+    <screenshots>
+      <screenshot image="b61bfc002dc86134ca11f1955d333f73_NONE.png"/>
+    </screenshots>
+    <description>Should see definition: &lt;span class=&apos;step-parameter&apos;&gt;An edible fruit produced by the pear tree, similar to an apple but elongated towards the stem.&lt;/span&gt;</description>
+  </test-step>
+</acceptance-test-run>

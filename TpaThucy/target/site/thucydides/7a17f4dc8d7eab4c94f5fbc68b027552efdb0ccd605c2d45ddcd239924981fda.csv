@@ -1,0 +1,3 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Search by keyword","Entering of correct credentials should open application","FAILURE","2014-08-06T09:42:56.300Z","0.0","4.3"
+"Search by keyword","Entering of incorrect credentials should not open application","FAILURE","2014-08-06T09:42:40.190Z","0.0","15.82"

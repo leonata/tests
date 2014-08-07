@@ -1,0 +1,9 @@
+<acceptance-test-run title="Searching by ambiguious keyword should display the disambiguation page" name="searching_by_ambiguious_keyword_should_display_the_disambiguation_page" steps="0" successful="0" failures="0" skipped="0" ignored="0" pending="0" result="PENDING" duration="1" timestamp="2014-08-06T12:32:59.626+03:00">
+  <user-story id="test.requirements.Application.Search.SearchByKeyword" name="Search by keyword" path="test.requirements.Application.Search">
+    <feature id="test.requirements.Application.Search" name="Search"/>
+  </user-story>
+  <tags>
+    <tag name="Search" type="feature"/>
+    <tag name="Search by keyword" type="story"/>
+  </tags>
+</acceptance-test-run>

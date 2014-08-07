@@ -1,0 +1,42 @@
+<acceptance-test-run title="Entering of incorrect credentials should not open application" name="entering_of_incorrect_credentials_should_not_open_application" steps="4" successful="4" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="44400" timestamp="2014-08-06T16:05:14.462+03:00">
+  <user-story id="test.requirements.UserLogin.LoginByUser.LoginWithCorrectCredentials" name="Login with correct credentials" path="test.requirements.UserLogin.LoginByUser">
+    <feature id="test.requirements.UserLogin.LoginByUser" name="Login by user"/>
+  </user-story>
+  <issues>
+    <issue>#LOGIN-1</issue>
+  </issues>
+  <tags>
+    <tag name="Login by user" type="feature"/>
+    <tag name="Login with correct credentials" type="story"/>
+  </tags>
+  <test-step result="SUCCESS" duration="38486">
+    <screenshots>
+      <screenshot image="32d771fcd38cbc4eabae6eeb2ccbfb9e_NONE.png"/>
+    </screenshots>
+    <description>Is the home page</description>
+  </test-step>
+  <test-group name="Enter credentials: &lt;span class=&apos;step-parameter&apos;&gt;qwerty&lt;/span&gt;" result="SUCCESS">
+    <screenshots>
+      <screenshot image="32d771fcd38cbc4eabae6eeb2ccbfb9e_NONE.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="3201">
+      <screenshots>
+        <screenshot image="0f0f78578aeb8837f947814ed410681f_NONE.png"/>
+      </screenshots>
+      <description>Enters: &lt;span class=&apos;step-parameter&apos;&gt;qwerty&lt;/span&gt;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1199">
+      <screenshots>
+        <screenshot image="0f0f78578aeb8837f947814ed410681f_NONE.png"/>
+        <screenshot image="fbca68f999f3bb6a9deb78f3610e373a_NONE.png"/>
+      </screenshots>
+      <description>Clicks</description>
+    </test-step>
+  </test-group>
+  <test-step result="SUCCESS" duration="379">
+    <screenshots>
+      <screenshot image="fbca68f999f3bb6a9deb78f3610e373a_NONE.png"/>
+    </screenshots>
+    <description>Should see warning: &lt;span class=&apos;step-parameter&apos;&gt;Incorrect login!&lt;/span&gt;</description>
+  </test-step>
+</acceptance-test-run>

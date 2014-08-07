@@ -1,0 +1,3 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Search by keyword","Entering of correct login incorrect password  should not open application","PENDING","2014-08-06T10:00:09.610Z","0.0","0.07"
+"Search by keyword","Searching by ambiguious keyword should display the disambiguation page","PENDING","2014-08-06T09:32:59.626Z","0.0","0.0"

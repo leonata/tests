@@ -1,0 +1,42 @@
+<acceptance-test-run title="Entering of incorrect credentials should not open application" name="entering_of_incorrect_credentials_should_not_open_application" steps="4" successful="4" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="19026" timestamp="2014-08-06T13:00:09.936+03:00">
+  <user-story id="test.requirements.Application.Search.SearchByKeyword" name="Search by keyword" path="test.requirements.Application.Search">
+    <feature id="test.requirements.Application.Search" name="Search"/>
+  </user-story>
+  <issues>
+    <issue>#LOGIN-1</issue>
+  </issues>
+  <tags>
+    <tag name="Search" type="feature"/>
+    <tag name="Search by keyword" type="story"/>
+  </tags>
+  <test-step result="SUCCESS" duration="15499">
+    <screenshots>
+      <screenshot image="72c136c1d90f3743be039fe24cdcbc5d_NONE.png"/>
+    </screenshots>
+    <description>Is the home page</description>
+  </test-step>
+  <test-group name="Enter credentials: &lt;span class=&apos;step-parameter&apos;&gt;qwerty&lt;/span&gt;" result="SUCCESS">
+    <screenshots>
+      <screenshot image="72c136c1d90f3743be039fe24cdcbc5d_NONE.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="1640">
+      <screenshots>
+        <screenshot image="c2d56c8b07282f9b0fd48475cdcb4ecd_NONE.png"/>
+      </screenshots>
+      <description>Enters: &lt;span class=&apos;step-parameter&apos;&gt;qwerty&lt;/span&gt;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="930">
+      <screenshots>
+        <screenshot image="c2d56c8b07282f9b0fd48475cdcb4ecd_NONE.png"/>
+        <screenshot image="ae5443d4fbc4f24b3ff594ba7cd04917_NONE.png"/>
+      </screenshots>
+      <description>Clicks</description>
+    </test-step>
+  </test-group>
+  <test-step result="SUCCESS" duration="339">
+    <screenshots>
+      <screenshot image="ae5443d4fbc4f24b3ff594ba7cd04917_NONE.png"/>
+    </screenshots>
+    <description>Should see warning: &lt;span class=&apos;step-parameter&apos;&gt;Incorrect login!&lt;/span&gt;</description>
+  </test-step>
+</acceptance-test-run>

@@ -1,0 +1,7 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Search by keyword","Entering of correct credentials should open application","SUCCESS","2014-08-06T10:00:28.977Z","0.0","4.2"
+"Login with correct credentials","Entering of correct credentials should open application","SUCCESS","2014-08-06T13:05:59.508Z","0.0","4.39"
+"Search by keyword","Entering of incorrect credentials should not open application","SUCCESS","2014-08-06T10:00:09.936Z","0.0","19.03"
+"Login with correct credentials","Entering of incorrect credentials should not open application","SUCCESS","2014-08-06T13:05:14.462Z","0.0","44.4"
+"Search by keyword","Searching by keyword apple should display the corresponding article","SUCCESS","2014-08-06T09:31:33.521Z","0.0","75.66"
+"Search by keyword","Searching by keyword banana should display the corresponding article","SUCCESS","2014-08-06T09:32:50.004Z","0.0","9.62"

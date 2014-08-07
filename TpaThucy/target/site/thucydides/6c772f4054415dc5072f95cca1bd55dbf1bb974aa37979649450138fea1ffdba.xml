@@ -1,0 +1,9 @@
+<acceptance-test-run title="Entering of correct login incorrect password  should not open application" name="entering_of_correct_login_incorrect_password__should_not_open_application" steps="0" successful="0" failures="0" skipped="0" ignored="0" pending="0" result="PENDING" duration="0" timestamp="2014-08-06T16:06:03.902+03:00">
+  <user-story id="test.requirements.UserLogin.LoginByUser.LoginWithCorrectCredentials" name="Login with correct credentials" path="test.requirements.UserLogin.LoginByUser">
+    <feature id="test.requirements.UserLogin.LoginByUser" name="Login by user"/>
+  </user-story>
+  <tags>
+    <tag name="Login by user" type="feature"/>
+    <tag name="Login with correct credentials" type="story"/>
+  </tags>
+</acceptance-test-run>

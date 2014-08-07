@@ -1,0 +1,42 @@
+<acceptance-test-run title="Searching by keyword apple should display the corresponding article" name="searching_by_keyword_apple_should_display_the_corresponding_article" steps="4" successful="4" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="75657" timestamp="2014-08-06T12:31:33.521+03:00">
+  <user-story id="test.requirements.Application.Search.SearchByKeyword" name="Search by keyword" path="test.requirements.Application.Search">
+    <feature id="test.requirements.Application.Search" name="Search"/>
+  </user-story>
+  <issues>
+    <issue>#WIKI-1</issue>
+  </issues>
+  <tags>
+    <tag name="Search" type="feature"/>
+    <tag name="Search by keyword" type="story"/>
+  </tags>
+  <test-step result="SUCCESS" duration="41083">
+    <screenshots>
+      <screenshot image="a04a57fa493520a2c8ce301d935b2037_NONE.png"/>
+    </screenshots>
+    <description>Is the home page</description>
+  </test-step>
+  <test-group name="Looks for: &lt;span class=&apos;step-parameter&apos;&gt;apple&lt;/span&gt;" result="SUCCESS">
+    <screenshots>
+      <screenshot image="a04a57fa493520a2c8ce301d935b2037_NONE.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="2713">
+      <screenshots>
+        <screenshot image="c3370432c7cc4019678eb59592c2f802_NONE.png"/>
+      </screenshots>
+      <description>Enters: &lt;span class=&apos;step-parameter&apos;&gt;apple&lt;/span&gt;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="22709">
+      <screenshots>
+        <screenshot image="c3370432c7cc4019678eb59592c2f802_NONE.png"/>
+        <screenshot image="23d6ccb8068bea225c2fa1f36dee00b4_NONE.png"/>
+      </screenshots>
+      <description>Starts search</description>
+    </test-step>
+  </test-group>
+  <test-step result="SUCCESS" duration="4770">
+    <screenshots>
+      <screenshot image="23d6ccb8068bea225c2fa1f36dee00b4_NONE.png"/>
+    </screenshots>
+    <description>Should see definition: &lt;span class=&apos;step-parameter&apos;&gt;A common, round fruit produced by the tree Malus domestica, cultivated in temperate climates.&lt;/span&gt;</description>
+  </test-step>
+</acceptance-test-run>

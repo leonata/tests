@@ -1,0 +1,40 @@
+<acceptance-test-run title="Entering of correct credentials should open application" name="entering_of_correct_credentials_should_open_application" steps="4" successful="4" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="4201" timestamp="2014-08-06T13:00:28.977+03:00">
+  <user-story id="test.requirements.Application.Search.SearchByKeyword" name="Search by keyword" path="test.requirements.Application.Search">
+    <feature id="test.requirements.Application.Search" name="Search"/>
+  </user-story>
+  <tags>
+    <tag name="Search" type="feature"/>
+    <tag name="Search by keyword" type="story"/>
+  </tags>
+  <test-step result="SUCCESS" duration="984">
+    <screenshots>
+      <screenshot image="ae5443d4fbc4f24b3ff594ba7cd04917_NONE.png"/>
+      <screenshot image="72c136c1d90f3743be039fe24cdcbc5d_NONE.png"/>
+    </screenshots>
+    <description>Is the home page</description>
+  </test-step>
+  <test-group name="Enter credentials: &lt;span class=&apos;step-parameter&apos;&gt;demo&lt;/span&gt;" result="SUCCESS">
+    <screenshots>
+      <screenshot image="72c136c1d90f3743be039fe24cdcbc5d_NONE.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="1101">
+      <screenshots>
+        <screenshot image="22c67c5827b41c20745324e4881d5ef3_NONE.png"/>
+      </screenshots>
+      <description>Enters: &lt;span class=&apos;step-parameter&apos;&gt;demo&lt;/span&gt;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1486">
+      <screenshots>
+        <screenshot image="22c67c5827b41c20745324e4881d5ef3_NONE.png"/>
+        <screenshot image="44fa263c9dc43ee44259e1504639e0e3_NONE.png"/>
+      </screenshots>
+      <description>Clicks</description>
+    </test-step>
+  </test-group>
+  <test-step result="SUCCESS" duration="337">
+    <screenshots>
+      <screenshot image="44fa263c9dc43ee44259e1504639e0e3_NONE.png"/>
+    </screenshots>
+    <description>Should see greeting: &lt;span class=&apos;step-parameter&apos;&gt;Welcome to application!&lt;/span&gt;</description>
+  </test-step>
+</acceptance-test-run>
