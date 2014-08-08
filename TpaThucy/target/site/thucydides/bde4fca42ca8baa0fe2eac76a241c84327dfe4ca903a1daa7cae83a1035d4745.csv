@@ -1,4 +1,5 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
 "Login with correct credentials","Entering of correct login incorrect password  should not open application","PENDING","2014-08-06T13:06:03.902Z","0.0","0.0"
 "Search by keyword","Entering of correct login incorrect password  should not open application","PENDING","2014-08-06T10:00:09.610Z","0.0","0.07"
+"Login by user","Entering of correct login incorrect password  should not open application","PENDING","2014-08-08T06:55:07.945Z","0.0","0.0"
 "Search by keyword","Searching by ambiguious keyword should display the disambiguation page","PENDING","2014-08-06T09:32:59.626Z","0.0","0.0"

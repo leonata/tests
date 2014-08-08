@@ -105,6 +105,123 @@
 
 
 
+        var date = new Date(2014, 7, 7,15, 55, 36);
+
+        specified.push([date, 44]);
+        done.push([date,40]);
+        skipped.push([date,4]);
+        failing.push([date,0]);
+
+
+
+        var date = new Date(2014, 7, 7,16, 33, 34);
+
+        specified.push([date, 44]);
+        done.push([date,40]);
+        skipped.push([date,4]);
+        failing.push([date,0]);
+
+
+
+        var date = new Date(2014, 7, 7,16, 43, 10);
+
+        specified.push([date, 45]);
+        done.push([date,40]);
+        skipped.push([date,5]);
+        failing.push([date,0]);
+
+
+
+        var date = new Date(2014, 7, 7,17, 4, 19);
+
+        specified.push([date, 35]);
+        done.push([date,30]);
+        skipped.push([date,5]);
+        failing.push([date,0]);
+
+
+
+        var date = new Date(2014, 7, 7,17, 13, 30);
+
+        specified.push([date, 35]);
+        done.push([date,30]);
+        skipped.push([date,5]);
+        failing.push([date,0]);
+
+
+
+        var date = new Date(2014, 7, 7,17, 16, 52);
+
+        specified.push([date, 35]);
+        done.push([date,30]);
+        skipped.push([date,5]);
+        failing.push([date,0]);
+
+
+
+        var date = new Date(2014, 7, 7,17, 31, 36);
+
+        specified.push([date, 35]);
+        done.push([date,30]);
+        skipped.push([date,5]);
+        failing.push([date,0]);
+
+
+
+        var date = new Date(2014, 7, 7,17, 42, 34);
+
+        specified.push([date, 30]);
+        done.push([date,30]);
+        skipped.push([date,0]);
+        failing.push([date,0]);
+
+
+
+        var date = new Date(2014, 7, 7,17, 50, 55);
+
+        specified.push([date, 30]);
+        done.push([date,30]);
+        skipped.push([date,0]);
+        failing.push([date,0]);
+
+
+
+        var date = new Date(2014, 7, 7,18, 2, 50);
+
+        specified.push([date, 30]);
+        done.push([date,30]);
+        skipped.push([date,0]);
+        failing.push([date,0]);
+
+
+
+        var date = new Date(2014, 7, 7,22, 33, 22);
+
+        specified.push([date, 40]);
+        done.push([date,40]);
+        skipped.push([date,0]);
+        failing.push([date,0]);
+
+
+
+        var date = new Date(2014, 7, 8,9, 54, 13);
+
+        specified.push([date, 52]);
+        done.push([date,44]);
+        skipped.push([date,8]);
+        failing.push([date,0]);
+
+
+
+        var date = new Date(2014, 7, 8,9, 55, 37);
+
+        specified.push([date, 52]);
+        done.push([date,52]);
+        skipped.push([date,0]);
+        failing.push([date,0]);
+
+
+
 
         targetPlot = $.jqplot('chart_div', [failing,skipped,done,specified], {
 
@@ -123,8 +240,8 @@
 
                 yaxis : {
                     min: 0,
-                    max: 30,
-                    tickInterval: 30 / 5,
+                    max: 52,
+                    tickInterval: 52 / 5,
                     tickOptions: {formatString: '%d' }
                 }
 
@@ -189,8 +306,8 @@
                 yaxis : {
 				show:false,
                     min: 0,
-                    max: 30,
-                    tickInterval: 30 / 5,
+                    max: 52,
+                    tickInterval: 52 / 5,
                     tickOptions: {formatString: '%d' }
                 }
             } //axes
@@ -232,7 +349,7 @@
         <li><a href="index.html" >Overall Test Results</a></li>
         <li><a href="capabilities.html" >Requirements</a></li>
     </ul>
-    <span class="date-and-time">Report generated 06-08-2014 16:06</span>
+    <span class="date-and-time">Report generated 08-08-2014 09:55</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>

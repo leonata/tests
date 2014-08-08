@@ -1,4 +1,7 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
+"Login by user","Entering of correct credentials should open application","SUCCESS","2014-08-08T06:55:07.948Z","0.0","6.94"
 "Login with correct credentials","Entering of correct credentials should open application","SUCCESS","2014-08-06T13:05:59.508Z","0.0","4.39"
 "Login with correct credentials","Entering of correct login incorrect password  should not open application","PENDING","2014-08-06T13:06:03.902Z","0.0","0.0"
+"Login by user","Entering of correct login incorrect password  should not open application","PENDING","2014-08-08T06:55:07.945Z","0.0","0.0"
+"Login by user","Entering of incorrect credentials should not open application","SUCCESS","2014-08-08T06:54:40.619Z","0.0","26.86"
 "Login with correct credentials","Entering of incorrect credentials should not open application","SUCCESS","2014-08-06T13:05:14.462Z","0.0","44.4"

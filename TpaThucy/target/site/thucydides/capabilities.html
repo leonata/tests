@@ -31,8 +31,8 @@
     <script class="code" type="text/javascript">$(document).ready(function () {
         var plot1 = $.jqplot('coverage_pie_chart', [
             [
-                ['Passing', 0.666667],
-                ['Pending', 0.333333],
+                ['Passing', 0.714286],
+                ['Pending', 0.285714],
                 ['Ignored', 0],
                 ['Failing', 0],
                 ['Errors',  0]
@@ -63,8 +63,8 @@
                 marginTop: '15px'
             },
             series: [
-                {label: '66.7% requirements tested successfully' },
-                {label: '33.3% requirements untested'},
+                {label: '71.4% requirements tested successfully' },
+                {label: '28.6% requirements untested'},
                 {label: '0%} requirements failing'},
                 {label: '0%} requirements with errors'}
             ]
@@ -144,7 +144,7 @@
         <li><a href="index.html" >Overall Test Results</a></li>
         <li><a href="capabilities.html" class="current">Requirements</a></li>
     </ul>
-    <span class="date-and-time">Report generated 06-08-2014 16:06</span>
+    <span class="date-and-time">Report generated 08-08-2014 09:55</span>
     <br style="clear:left"/>
 </div>
 
@@ -175,10 +175,10 @@
                 <body>
                     <tr>
                         <td class="summary-leading-column">Acceptance Criteria (tests)</td>
-                        <td>9</td>
-                        <td>6</td>
+                        <td>14</td>
+                        <td>10</td>
                         <td>0</td>
-                        <td>3</td>
+                        <td>4</td>
                         <td>0</td>
                         <td></td>
                     </tr>
@@ -206,10 +206,10 @@
         <body>
         <tr>
             <td class="summary-leading-column">Automated</td>
-            <td>9</td>
-            <td>6 (67%)</td>
+            <td>14</td>
+            <td>10 (71%)</td>
             <td>0 (0%)</td>
-            <td>3 (33%)</td>
+            <td>4 (29%)</td>
             <td>0 (0%)</td>
         </tr>
         <tr>
@@ -222,10 +222,10 @@
         </tr>
         <tr>
             <td class="summary-leading-column">Total</td>
-            <td>9</td>
-            <td>6 (67%)</td>
+            <td>14</td>
+            <td>10 (71%)</td>
             <td>0 (0%)</td>
-            <td>3 (33%)</td>
+            <td>4 (29%)</td>
             <td>0 (0%)</td>
         </tr>
         </body>
@@ -239,7 +239,7 @@
 
     <div id="test-tabs">
         <ul>
-            <li><a href="#test-tabs-1">Acceptance Tests (9)</a></li>
+            <li><a href="#test-tabs-1">Acceptance Tests (14)</a></li>
         </ul>
         <div id="test_list_tests" class="table">
             <div class="test-results">
@@ -271,6 +271,42 @@
                                 <span style="display:none">0</span>
                             </td>
                             <td class="lightgreentext">4.2</td>
+                        </tr>
+
+
+                        <tr class="test-SUCCESS">
+                            <td><img src="images/success.png" title="SUCCESS"
+                                     class="summary-icon"/><span style="display:none">SUCCESS</span></td>
+                            <td class="SUCCESS-text"><a
+                                    href="abf4e2fffa1a1abd78e311dd73321b6914eb42098d8e961cdddd8666e3f4dfd7.html" title="">Entering of correct credentials should open application </a>
+                            </td>
+
+                            <td class="lightgreentext">5</td>
+                            <td class="bluetext">
+                                <img src="images/traffic-in-progress.gif"
+                                     title="Over the last 0 tests: 0 passed, 0 failed, 0 pending"
+                                     class="summary-icon"/>
+                                <span style="display:none">0</span>
+                            </td>
+                            <td class="lightgreentext">6.94</td>
+                        </tr>
+
+
+                        <tr class="test-SUCCESS">
+                            <td><img src="images/success.png" title="SUCCESS"
+                                     class="summary-icon"/><span style="display:none">SUCCESS</span></td>
+                            <td class="SUCCESS-text"><a
+                                    href="c272c1e9759fbcb1e73c1b88cf277e239920bd7b8655b52aecec6e5d73ae4bb4.html" title="">Entering of correct credentials should open application (#ProductGroup-1)</a>
+                            </td>
+
+                            <td class="lightgreentext">4</td>
+                            <td class="bluetext">
+                                <img src="images/traffic-in-progress.gif"
+                                     title="Over the last 0 tests: 0 passed, 0 failed, 0 pending"
+                                     class="summary-icon"/>
+                                <span style="display:none">0</span>
+                            </td>
+                            <td class="lightgreentext">34.1</td>
                         </tr>
 
 
@@ -328,6 +364,24 @@
                         </tr>
 
 
+                        <tr class="test-PENDING">
+                            <td><img src="images/pending.png" title="PENDING"
+                                     class="summary-icon"/><span style="display:none">PENDING</span></td>
+                            <td class="PENDING-text"><a
+                                    href="e531b65768989cf31059fc634d05afd97907c009f2212edf7640cca701eb024f.html" title="">Entering of correct login incorrect password  should not open application </a>
+                            </td>
+
+                            <td class="lightgreentext">0</td>
+                            <td class="bluetext">
+                                <img src="images/traffic-in-progress.gif"
+                                     title="Over the last 0 tests: 0 passed, 0 failed, 0 pending"
+                                     class="summary-icon"/>
+                                <span style="display:none">0</span>
+                            </td>
+                            <td class="lightgreentext">0</td>
+                        </tr>
+
+
                         <tr class="test-SUCCESS">
                             <td><img src="images/success.png" title="SUCCESS"
                                      class="summary-icon"/><span style="display:none">SUCCESS</span></td>
@@ -350,6 +404,24 @@
                             <td><img src="images/success.png" title="SUCCESS"
                                      class="summary-icon"/><span style="display:none">SUCCESS</span></td>
                             <td class="SUCCESS-text"><a
+                                    href="6eb19fb1782623cae89c5064ffc404913511951d92deb836db531154aa5314cb.html" title="">Entering of incorrect credentials should not open application (#LOGIN-1)</a>
+                            </td>
+
+                            <td class="lightgreentext">5</td>
+                            <td class="bluetext">
+                                <img src="images/traffic-in-progress.gif"
+                                     title="Over the last 0 tests: 0 passed, 0 failed, 0 pending"
+                                     class="summary-icon"/>
+                                <span style="display:none">0</span>
+                            </td>
+                            <td class="lightgreentext">26.86</td>
+                        </tr>
+
+
+                        <tr class="test-SUCCESS">
+                            <td><img src="images/success.png" title="SUCCESS"
+                                     class="summary-icon"/><span style="display:none">SUCCESS</span></td>
+                            <td class="SUCCESS-text"><a
                                     href="df401b6294b2f9c52e33d2f9089381deaef8ad0a627ad10abad616b8b273cb1d.html" title="">Entering of incorrect credentials should not open application (#LOGIN-1)</a>
                             </td>
 
@@ -361,6 +433,24 @@
                                 <span style="display:none">0</span>
                             </td>
                             <td class="lightgreentext">44.4</td>
+                        </tr>
+
+
+                        <tr class="test-SUCCESS">
+                            <td><img src="images/success.png" title="SUCCESS"
+                                     class="summary-icon"/><span style="display:none">SUCCESS</span></td>
+                            <td class="SUCCESS-text"><a
+                                    href="6622034d68e658d78953e973e1e8a8fbc4f65415e3854e970cd5b5ba502438e7.html" title="">Product group creation </a>
+                            </td>
+
+                            <td class="lightgreentext">8</td>
+                            <td class="bluetext">
+                                <img src="images/traffic-in-progress.gif"
+                                     title="Over the last 0 tests: 0 passed, 0 failed, 0 pending"
+                                     class="summary-icon"/>
+                                <span style="display:none">0</span>
+                            </td>
+                            <td class="lightgreentext">50.02</td>
                         </tr>
 
 

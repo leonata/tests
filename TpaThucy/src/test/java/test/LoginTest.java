@@ -1,5 +1,4 @@
 package test;
-
 import net.thucydides.core.annotations.Issue;
 import net.thucydides.core.annotations.ManagedPages;
 import net.thucydides.core.annotations.Pending;
