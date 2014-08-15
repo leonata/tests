@@ -31,11 +31,11 @@
     <script class="code" type="text/javascript">$(document).ready(function () {
         var plot1 = $.jqplot('coverage_pie_chart', [
             [
-                ['Passing', 0.714286],
-                ['Pending', 0.285714],
+                ['Passing', 0.270833],
+                ['Pending', 0],
                 ['Ignored', 0],
                 ['Failing', 0],
-                ['Errors',  0]
+                ['Errors',  0.729167]
             ]
         ], {
             gridPadding: {top: 0, bottom: 38, left: 0, right: 0},
@@ -63,10 +63,10 @@
                 marginTop: '15px'
             },
             series: [
-                {label: '71.4% requirements tested successfully' },
-                {label: '28.6% requirements untested'},
+                {label: '27.1% requirements tested successfully' },
+                {label: '0% requirements untested'},
                 {label: '0%} requirements failing'},
-                {label: '0%} requirements with errors'}
+                {label: '72.9%} requirements with errors'}
             ]
         });
         // Results table
@@ -144,7 +144,7 @@
         <li><a href="index.html" >Overall Test Results</a></li>
         <li><a href="capabilities.html" class="current">Requirements</a></li>
     </ul>
-    <span class="date-and-time">Report generated 08-08-2014 09:55</span>
+    <span class="date-and-time">Report generated 14-08-2014 16:05</span>
     <br style="clear:left"/>
 </div>
 
@@ -175,10 +175,10 @@
                 <body>
                     <tr>
                         <td class="summary-leading-column">Acceptance Criteria (tests)</td>
-                        <td>14</td>
-                        <td>10</td>
+                        <td>48</td>
+                        <td>13</td>
                         <td>0</td>
-                        <td>4</td>
+                        <td>0</td>
                         <td>0</td>
                         <td></td>
                     </tr>
@@ -206,10 +206,10 @@
         <body>
         <tr>
             <td class="summary-leading-column">Automated</td>
-            <td>14</td>
-            <td>10 (71%)</td>
+            <td>48</td>
+            <td>13 (27%)</td>
+            <td>35 (73%)</td>
             <td>0 (0%)</td>
-            <td>4 (29%)</td>
             <td>0 (0%)</td>
         </tr>
         <tr>
@@ -222,10 +222,10 @@
         </tr>
         <tr>
             <td class="summary-leading-column">Total</td>
-            <td>14</td>
-            <td>10 (71%)</td>
+            <td>48</td>
+            <td>13 (27%)</td>
+            <td>35 (0%)</td>
             <td>0 (0%)</td>
-            <td>4 (29%)</td>
             <td>0 (0%)</td>
         </tr>
         </body>
@@ -239,7 +239,7 @@
 
     <div id="test-tabs">
         <ul>
-            <li><a href="#test-tabs-1">Acceptance Tests (14)</a></li>
+            <li><a href="#test-tabs-1">Acceptance Tests (48)</a></li>
         </ul>
         <div id="test_list_tests" class="table">
             <div class="test-results">
@@ -256,11 +256,32 @@
                     <tbody>
 
 
+                        <tr class="test-ERROR">
+                            <td><img src="images/cross.png" title="ERROR"
+                                     class="summary-icon"/><span style="display:none">ERROR</span></td>
+                            <td class="ERROR-text"><a
+                                    href="b1ecf2003cf0d58b32da6852c7c18bb326aa1e01b8fbab4b1c5cf74181dd0428.html" title="Expected enabled element was not enabled
+Build info: version: '2.42.2', revision: '6a6995d31c7c56c340d6f45a76976d43506cd6cc', time: '2014-06-03 10:52:47'
+System info: host: 'user-ПК', ip: '172.16.3.37', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_11'
+Driver info: driver.version: unknown">A diagnose group creation </a>
+                            </td>
+
+                            <td class="lightgreentext">11</td>
+                            <td class="bluetext">
+                                <img src="images/traffic-in-progress.gif"
+                                     title="Over the last 0 tests: 0 passed, 0 failed, 0 pending"
+                                     class="summary-icon"/>
+                                <span style="display:none">0</span>
+                            </td>
+                            <td class="lightgreentext">55.91</td>
+                        </tr>
+
+
                         <tr class="test-SUCCESS">
                             <td><img src="images/success.png" title="SUCCESS"
                                      class="summary-icon"/><span style="display:none">SUCCESS</span></td>
                             <td class="SUCCESS-text"><a
-                                    href="6ccd4f394a0ca8fd45422bcbcf6ea79777af323d2f77795f4bae5e3fc2728322.html" title="">Entering of correct credentials should open application </a>
+                                    href="b12dc0d959bf195292ad010266db570b83b2cefd5bba703d6aaccc1e1f854e71.html" title="">A entering of incorrect credentials should not open application (#LOGIN-1)</a>
                             </td>
 
                             <td class="lightgreentext">5</td>
@@ -270,7 +291,7 @@
                                      class="summary-icon"/>
                                 <span style="display:none">0</span>
                             </td>
-                            <td class="lightgreentext">4.2</td>
+                            <td class="lightgreentext">17.81</td>
                         </tr>
 
 
@@ -278,25 +299,7 @@
                             <td><img src="images/success.png" title="SUCCESS"
                                      class="summary-icon"/><span style="display:none">SUCCESS</span></td>
                             <td class="SUCCESS-text"><a
-                                    href="abf4e2fffa1a1abd78e311dd73321b6914eb42098d8e961cdddd8666e3f4dfd7.html" title="">Entering of correct credentials should open application </a>
-                            </td>
-
-                            <td class="lightgreentext">5</td>
-                            <td class="bluetext">
-                                <img src="images/traffic-in-progress.gif"
-                                     title="Over the last 0 tests: 0 passed, 0 failed, 0 pending"
-                                     class="summary-icon"/>
-                                <span style="display:none">0</span>
-                            </td>
-                            <td class="lightgreentext">6.94</td>
-                        </tr>
-
-
-                        <tr class="test-SUCCESS">
-                            <td><img src="images/success.png" title="SUCCESS"
-                                     class="summary-icon"/><span style="display:none">SUCCESS</span></td>
-                            <td class="SUCCESS-text"><a
-                                    href="c272c1e9759fbcb1e73c1b88cf277e239920bd7b8655b52aecec6e5d73ae4bb4.html" title="">Entering of correct credentials should open application (#ProductGroup-1)</a>
+                                    href="e2a7fab7d55de5be24c0091935853e6bfe87e57965f01660796dc2b917eb7057.html" title="">A entering of incorrect credentials should not open application (#LoginToAdminApp-1)</a>
                             </td>
 
                             <td class="lightgreentext">4</td>
@@ -306,7 +309,109 @@
                                      class="summary-icon"/>
                                 <span style="display:none">0</span>
                             </td>
-                            <td class="lightgreentext">34.1</td>
+                            <td class="lightgreentext">73.17</td>
+                        </tr>
+
+
+                        <tr class="test-ERROR">
+                            <td><img src="images/cross.png" title="ERROR"
+                                     class="summary-icon"/><span style="display:none">ERROR</span></td>
+                            <td class="ERROR-text"><a
+                                    href="c4e2cc8e3f913e8dfdee9e031949414092e10b271a4755719b687dfcb7079fc1.html" title="expected:<code001[2]> but was:<code001[]>">A external key creation </a>
+                            </td>
+
+                            <td class="lightgreentext">10</td>
+                            <td class="bluetext">
+                                <img src="images/traffic-in-progress.gif"
+                                     title="Over the last 0 tests: 0 passed, 0 failed, 0 pending"
+                                     class="summary-icon"/>
+                                <span style="display:none">0</span>
+                            </td>
+                            <td class="lightgreentext">36.02</td>
+                        </tr>
+
+
+                        <tr class="test-ERROR">
+                            <td><img src="images/cross.png" title="ERROR"
+                                     class="summary-icon"/><span style="display:none">ERROR</span></td>
+                            <td class="ERROR-text"><a
+                                    href="bfc1ed8c1deab06f1b5b7449a4e6fd36901cfdbbeb92fd22d6e52ef73e4c5308.html" title="Expected enabled element was not enabled
+Build info: version: '2.42.2', revision: '6a6995d31c7c56c340d6f45a76976d43506cd6cc', time: '2014-06-03 10:52:47'
+System info: host: 'user-ПК', ip: '172.16.3.37', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_11'
+Driver info: driver.version: unknown">A procedure group creation </a>
+                            </td>
+
+                            <td class="lightgreentext">11</td>
+                            <td class="bluetext">
+                                <img src="images/traffic-in-progress.gif"
+                                     title="Over the last 0 tests: 0 passed, 0 failed, 0 pending"
+                                     class="summary-icon"/>
+                                <span style="display:none">0</span>
+                            </td>
+                            <td class="lightgreentext">51.57</td>
+                        </tr>
+
+
+                        <tr class="test-ERROR">
+                            <td><img src="images/cross.png" title="ERROR"
+                                     class="summary-icon"/><span style="display:none">ERROR</span></td>
+                            <td class="ERROR-text"><a
+                                    href="cacd8832e8ceb7cf026c4e0a8cb6593b6cc2db477604ef717172b5ce10f70edb.html" title="Expected enabled element was not enabled
+Build info: version: '2.42.2', revision: '6a6995d31c7c56c340d6f45a76976d43506cd6cc', time: '2014-06-03 10:52:47'
+System info: host: 'user-ПК', ip: '172.16.3.37', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_11'
+Driver info: driver.version: unknown">A product group creation </a>
+                            </td>
+
+                            <td class="lightgreentext">10</td>
+                            <td class="bluetext">
+                                <img src="images/traffic-in-progress.gif"
+                                     title="Over the last 0 tests: 0 passed, 0 failed, 0 pending"
+                                     class="summary-icon"/>
+                                <span style="display:none">0</span>
+                            </td>
+                            <td class="lightgreentext">60.37</td>
+                        </tr>
+
+
+                        <tr class="test-ERROR">
+                            <td><img src="images/cross.png" title="ERROR"
+                                     class="summary-icon"/><span style="display:none">ERROR</span></td>
+                            <td class="ERROR-text"><a
+                                    href="96042aac23686451f6d420490c309203460b1d95e1444038700656e73beaabaa.html" title="Expected enabled element was not enabled
+Build info: version: '2.42.2', revision: '6a6995d31c7c56c340d6f45a76976d43506cd6cc', time: '2014-06-03 10:52:47'
+System info: host: 'user-ПК', ip: '172.16.3.37', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_11'
+Driver info: driver.version: unknown">A service region creation </a>
+                            </td>
+
+                            <td class="lightgreentext">11</td>
+                            <td class="bluetext">
+                                <img src="images/traffic-in-progress.gif"
+                                     title="Over the last 0 tests: 0 passed, 0 failed, 0 pending"
+                                     class="summary-icon"/>
+                                <span style="display:none">0</span>
+                            </td>
+                            <td class="lightgreentext">54.21</td>
+                        </tr>
+
+
+                        <tr class="test-ERROR">
+                            <td><img src="images/cross.png" title="ERROR"
+                                     class="summary-icon"/><span style="display:none">ERROR</span></td>
+                            <td class="ERROR-text"><a
+                                    href="2cad8ec9a8c233320a8e207744cb092944d1200b5c9582a5395c80c3ad5aa4a9.html" title="Expected enabled element was not enabled
+Build info: version: '2.42.2', revision: '6a6995d31c7c56c340d6f45a76976d43506cd6cc', time: '2014-06-03 10:52:47'
+System info: host: 'user-ПК', ip: '172.16.3.37', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_11'
+Driver info: driver.version: unknown">B diagnose group update </a>
+                            </td>
+
+                            <td class="lightgreentext">7</td>
+                            <td class="bluetext">
+                                <img src="images/traffic-in-progress.gif"
+                                     title="Over the last 0 tests: 0 passed, 0 failed, 0 pending"
+                                     class="summary-icon"/>
+                                <span style="display:none">0</span>
+                            </td>
+                            <td class="lightgreentext">38.5</td>
                         </tr>
 
 
@@ -314,7 +419,25 @@
                             <td><img src="images/success.png" title="SUCCESS"
                                      class="summary-icon"/><span style="display:none">SUCCESS</span></td>
                             <td class="SUCCESS-text"><a
-                                    href="ea170d122acdd6f82884ba88cf86cdad666724174691598212af44a56dc7a002.html" title="">Entering of correct credentials should open application </a>
+                                    href="8cd0aebf0f9516740fc579741f401423998cf5497b507fab010b3ecc7fe56d9c.html" title="">B entering of incorrect credentials should open application </a>
+                            </td>
+
+                            <td class="lightgreentext">4</td>
+                            <td class="bluetext">
+                                <img src="images/traffic-in-progress.gif"
+                                     title="Over the last 0 tests: 0 passed, 0 failed, 0 pending"
+                                     class="summary-icon"/>
+                                <span style="display:none">0</span>
+                            </td>
+                            <td class="lightgreentext">5.39</td>
+                        </tr>
+
+
+                        <tr class="test-SUCCESS">
+                            <td><img src="images/success.png" title="SUCCESS"
+                                     class="summary-icon"/><span style="display:none">SUCCESS</span></td>
+                            <td class="SUCCESS-text"><a
+                                    href="dc26f77c6d913295e7393787804b10edde80d45523b2b073fcbfdf1ef3c49310.html" title="">B entering of incorrect credentials should open application </a>
                             </td>
 
                             <td class="lightgreentext">5</td>
@@ -324,61 +447,7 @@
                                      class="summary-icon"/>
                                 <span style="display:none">0</span>
                             </td>
-                            <td class="lightgreentext">4.39</td>
-                        </tr>
-
-
-                        <tr class="test-PENDING">
-                            <td><img src="images/pending.png" title="PENDING"
-                                     class="summary-icon"/><span style="display:none">PENDING</span></td>
-                            <td class="PENDING-text"><a
-                                    href="6c772f4054415dc5072f95cca1bd55dbf1bb974aa37979649450138fea1ffdba.html" title="">Entering of correct login incorrect password  should not open application </a>
-                            </td>
-
-                            <td class="lightgreentext">0</td>
-                            <td class="bluetext">
-                                <img src="images/traffic-in-progress.gif"
-                                     title="Over the last 0 tests: 0 passed, 0 failed, 0 pending"
-                                     class="summary-icon"/>
-                                <span style="display:none">0</span>
-                            </td>
-                            <td class="lightgreentext">0</td>
-                        </tr>
-
-
-                        <tr class="test-PENDING">
-                            <td><img src="images/pending.png" title="PENDING"
-                                     class="summary-icon"/><span style="display:none">PENDING</span></td>
-                            <td class="PENDING-text"><a
-                                    href="819336ed2cc56029623a667a94f37242bff8062285a8c916f6167302d901e695.html" title="">Entering of correct login incorrect password  should not open application </a>
-                            </td>
-
-                            <td class="lightgreentext">0</td>
-                            <td class="bluetext">
-                                <img src="images/traffic-in-progress.gif"
-                                     title="Over the last 0 tests: 0 passed, 0 failed, 0 pending"
-                                     class="summary-icon"/>
-                                <span style="display:none">0</span>
-                            </td>
-                            <td class="lightgreentext">0.07</td>
-                        </tr>
-
-
-                        <tr class="test-PENDING">
-                            <td><img src="images/pending.png" title="PENDING"
-                                     class="summary-icon"/><span style="display:none">PENDING</span></td>
-                            <td class="PENDING-text"><a
-                                    href="e531b65768989cf31059fc634d05afd97907c009f2212edf7640cca701eb024f.html" title="">Entering of correct login incorrect password  should not open application </a>
-                            </td>
-
-                            <td class="lightgreentext">0</td>
-                            <td class="bluetext">
-                                <img src="images/traffic-in-progress.gif"
-                                     title="Over the last 0 tests: 0 passed, 0 failed, 0 pending"
-                                     class="summary-icon"/>
-                                <span style="display:none">0</span>
-                            </td>
-                            <td class="lightgreentext">0</td>
+                            <td class="lightgreentext">4.4</td>
                         </tr>
 
 
@@ -386,7 +455,91 @@
                             <td><img src="images/success.png" title="SUCCESS"
                                      class="summary-icon"/><span style="display:none">SUCCESS</span></td>
                             <td class="SUCCESS-text"><a
-                                    href="5438951534aae5b9f3b186c76e6c6db0cf099335d02d8e3b56109c48fa06113e.html" title="">Entering of incorrect credentials should not open application (#LOGIN-1)</a>
+                                    href="bec40d3bbdfcd970e08ecbd09458b4823c4f0f4741b1c2c4d68d06062f1e4879.html" title="">B external key update </a>
+                            </td>
+
+                            <td class="lightgreentext">6</td>
+                            <td class="bluetext">
+                                <img src="images/traffic-in-progress.gif"
+                                     title="Over the last 0 tests: 0 passed, 0 failed, 0 pending"
+                                     class="summary-icon"/>
+                                <span style="display:none">0</span>
+                            </td>
+                            <td class="lightgreentext">6.35</td>
+                        </tr>
+
+
+                        <tr class="test-ERROR">
+                            <td><img src="images/cross.png" title="ERROR"
+                                     class="summary-icon"/><span style="display:none">ERROR</span></td>
+                            <td class="ERROR-text"><a
+                                    href="1a01b498a99dc5ca64d54d1d35c461f4116bd11300fd867b3c6477078084dbc1.html" title="Expected enabled element was not enabled
+Build info: version: '2.42.2', revision: '6a6995d31c7c56c340d6f45a76976d43506cd6cc', time: '2014-06-03 10:52:47'
+System info: host: 'user-ПК', ip: '172.16.3.37', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_11'
+Driver info: driver.version: unknown">B procedure group update </a>
+                            </td>
+
+                            <td class="lightgreentext">6</td>
+                            <td class="bluetext">
+                                <img src="images/traffic-in-progress.gif"
+                                     title="Over the last 0 tests: 0 passed, 0 failed, 0 pending"
+                                     class="summary-icon"/>
+                                <span style="display:none">0</span>
+                            </td>
+                            <td class="lightgreentext">35.64</td>
+                        </tr>
+
+
+                        <tr class="test-ERROR">
+                            <td><img src="images/cross.png" title="ERROR"
+                                     class="summary-icon"/><span style="display:none">ERROR</span></td>
+                            <td class="ERROR-text"><a
+                                    href="85707ee9cb68baffe352148b8c4998b1f228ea2f7a3435ccb7ffbae390aef544.html" title="Expected enabled element was not enabled
+Build info: version: '2.42.2', revision: '6a6995d31c7c56c340d6f45a76976d43506cd6cc', time: '2014-06-03 10:52:47'
+System info: host: 'user-ПК', ip: '172.16.3.37', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_11'
+Driver info: driver.version: unknown">B product group update </a>
+                            </td>
+
+                            <td class="lightgreentext">6</td>
+                            <td class="bluetext">
+                                <img src="images/traffic-in-progress.gif"
+                                     title="Over the last 0 tests: 0 passed, 0 failed, 0 pending"
+                                     class="summary-icon"/>
+                                <span style="display:none">0</span>
+                            </td>
+                            <td class="lightgreentext">32.82</td>
+                        </tr>
+
+
+                        <tr class="test-ERROR">
+                            <td><img src="images/cross.png" title="ERROR"
+                                     class="summary-icon"/><span style="display:none">ERROR</span></td>
+                            <td class="ERROR-text"><a
+                                    href="4bbf3702a8443357ec0a0ee957a0317b172f67b5d7204835523e4a160618e38a.html" title="Expected enabled element was not enabled
+Build info: version: '2.42.2', revision: '6a6995d31c7c56c340d6f45a76976d43506cd6cc', time: '2014-06-03 10:52:47'
+System info: host: 'user-ПК', ip: '172.16.3.37', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_11'
+Driver info: driver.version: unknown">B service region update </a>
+                            </td>
+
+                            <td class="lightgreentext">6</td>
+                            <td class="bluetext">
+                                <img src="images/traffic-in-progress.gif"
+                                     title="Over the last 0 tests: 0 passed, 0 failed, 0 pending"
+                                     class="summary-icon"/>
+                                <span style="display:none">0</span>
+                            </td>
+                            <td class="lightgreentext">30.64</td>
+                        </tr>
+
+
+                        <tr class="test-ERROR">
+                            <td><img src="images/cross.png" title="ERROR"
+                                     class="summary-icon"/><span style="display:none">ERROR</span></td>
+                            <td class="ERROR-text"><a
+                                    href="7fd2d1813533f2d4fa8411063e27b7a9da6147b8e3f9d41508bd548d5c1dcad2.html" title="Expected enabled element was not enabled
+Build info: version: '2.42.2', revision: '6a6995d31c7c56c340d6f45a76976d43506cd6cc', time: '2014-06-03 10:52:47'
+System info: host: 'user-ПК', ip: '172.16.3.37', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_11'
+Driver info: driver.version: unknown">Benefit category creation </a>
                             </td>
 
                             <td class="lightgreentext">5</td>
@@ -396,69 +549,41 @@
                                      class="summary-icon"/>
                                 <span style="display:none">0</span>
                             </td>
-                            <td class="lightgreentext">19.03</td>
+                            <td class="lightgreentext">54.23</td>
                         </tr>
 
 
-                        <tr class="test-SUCCESS">
-                            <td><img src="images/success.png" title="SUCCESS"
-                                     class="summary-icon"/><span style="display:none">SUCCESS</span></td>
-                            <td class="SUCCESS-text"><a
-                                    href="6eb19fb1782623cae89c5064ffc404913511951d92deb836db531154aa5314cb.html" title="">Entering of incorrect credentials should not open application (#LOGIN-1)</a>
+                        <tr class="test-ERROR">
+                            <td><img src="images/cross.png" title="ERROR"
+                                     class="summary-icon"/><span style="display:none">ERROR</span></td>
+                            <td class="ERROR-text"><a
+                                    href="f1039977f980fb0124873832966f936f26a9ab6158de7b61924acb291bf4199a.html" title="Unresolved compilation problems: 
+	The method checkCreatedBenefitCategory() is undefined for the type BenefitCategorySteps
+	The method clickDeleteButton() is undefined for the type BenefitCategorySteps
+	The method clickConfirmDeletionButton() is undefined for the type BenefitCategorySteps
+	The method seeThatBenefitCategoryIsDeleted(String) is undefined for the type BenefitCategorySteps
+">Benefit category deletion </a>
                             </td>
 
-                            <td class="lightgreentext">5</td>
+                            <td class="lightgreentext">0</td>
                             <td class="bluetext">
                                 <img src="images/traffic-in-progress.gif"
                                      title="Over the last 0 tests: 0 passed, 0 failed, 0 pending"
                                      class="summary-icon"/>
                                 <span style="display:none">0</span>
                             </td>
-                            <td class="lightgreentext">26.86</td>
+                            <td class="lightgreentext">0.01</td>
                         </tr>
 
 
-                        <tr class="test-SUCCESS">
-                            <td><img src="images/success.png" title="SUCCESS"
-                                     class="summary-icon"/><span style="display:none">SUCCESS</span></td>
-                            <td class="SUCCESS-text"><a
-                                    href="df401b6294b2f9c52e33d2f9089381deaef8ad0a627ad10abad616b8b273cb1d.html" title="">Entering of incorrect credentials should not open application (#LOGIN-1)</a>
-                            </td>
-
-                            <td class="lightgreentext">5</td>
-                            <td class="bluetext">
-                                <img src="images/traffic-in-progress.gif"
-                                     title="Over the last 0 tests: 0 passed, 0 failed, 0 pending"
-                                     class="summary-icon"/>
-                                <span style="display:none">0</span>
-                            </td>
-                            <td class="lightgreentext">44.4</td>
-                        </tr>
-
-
-                        <tr class="test-SUCCESS">
-                            <td><img src="images/success.png" title="SUCCESS"
-                                     class="summary-icon"/><span style="display:none">SUCCESS</span></td>
-                            <td class="SUCCESS-text"><a
-                                    href="6622034d68e658d78953e973e1e8a8fbc4f65415e3854e970cd5b5ba502438e7.html" title="">Product group creation </a>
-                            </td>
-
-                            <td class="lightgreentext">8</td>
-                            <td class="bluetext">
-                                <img src="images/traffic-in-progress.gif"
-                                     title="Over the last 0 tests: 0 passed, 0 failed, 0 pending"
-                                     class="summary-icon"/>
-                                <span style="display:none">0</span>
-                            </td>
-                            <td class="lightgreentext">50.02</td>
-                        </tr>
-
-
-                        <tr class="test-PENDING">
-                            <td><img src="images/pending.png" title="PENDING"
-                                     class="summary-icon"/><span style="display:none">PENDING</span></td>
-                            <td class="PENDING-text"><a
-                                    href="2f8053ed5d62c769c377975b1ffbb7b282a5dad8fb23ab89dbc4759d33089a82.html" title="">Searching by ambiguious keyword should display the disambiguation page </a>
+                        <tr class="test-ERROR">
+                            <td><img src="images/cross.png" title="ERROR"
+                                     class="summary-icon"/><span style="display:none">ERROR</span></td>
+                            <td class="ERROR-text"><a
+                                    href="64b45e74b57e65ccdfc83d87011632c9f956be0f85cf9801ea6c7fe3e2062251.html" title="Unresolved compilation problems: 
+	The method clickRestoreButton() is undefined for the type BenefitCategorySteps
+	The method seeThatBenefitCategoryIsRestored() is undefined for the type BenefitCategorySteps
+">Benefit category restoration </a>
                             </td>
 
                             <td class="lightgreentext">0</td>
@@ -472,11 +597,35 @@
                         </tr>
 
 
-                        <tr class="test-SUCCESS">
-                            <td><img src="images/success.png" title="SUCCESS"
-                                     class="summary-icon"/><span style="display:none">SUCCESS</span></td>
-                            <td class="SUCCESS-text"><a
-                                    href="a9432f0b298bdc763094f213ab5a49f17f04653ddd31ba8ca90df16c136cec42.html" title="">Searching by keyword apple should display the corresponding article (#WIKI-1)</a>
+                        <tr class="test-ERROR">
+                            <td><img src="images/cross.png" title="ERROR"
+                                     class="summary-icon"/><span style="display:none">ERROR</span></td>
+                            <td class="ERROR-text"><a
+                                    href="767c0218d70bf200d301a50b8e217154bd3d6cef5778e93bf244ba8017be4390.html" title="Unresolved compilation problems: 
+	The method selectCreatedBenefitCategory() is undefined for the type BenefitCategorySteps
+	The method clickConfirmUpdateButton() is undefined for the type BenefitCategorySteps
+">Benefit category update </a>
+                            </td>
+
+                            <td class="lightgreentext">0</td>
+                            <td class="bluetext">
+                                <img src="images/traffic-in-progress.gif"
+                                     title="Over the last 0 tests: 0 passed, 0 failed, 0 pending"
+                                     class="summary-icon"/>
+                                <span style="display:none">0</span>
+                            </td>
+                            <td class="lightgreentext">0</td>
+                        </tr>
+
+
+                        <tr class="test-ERROR">
+                            <td><img src="images/cross.png" title="ERROR"
+                                     class="summary-icon"/><span style="display:none">ERROR</span></td>
+                            <td class="ERROR-text"><a
+                                    href="dc0c7ea598fa6e65368e969607a1a9f04ad399fe7506c950e9aaa41b2f817666.html" title="Expected enabled element was not enabled
+Build info: version: '2.42.2', revision: '6a6995d31c7c56c340d6f45a76976d43506cd6cc', time: '2014-06-03 10:52:47'
+System info: host: 'user-ПК', ip: '172.16.3.37', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_11'
+Driver info: driver.version: unknown">C diagnose group deletion </a>
                             </td>
 
                             <td class="lightgreentext">5</td>
@@ -486,7 +635,7 @@
                                      class="summary-icon"/>
                                 <span style="display:none">0</span>
                             </td>
-                            <td class="lightgreentext">75.66</td>
+                            <td class="lightgreentext">32.83</td>
                         </tr>
 
 
@@ -494,7 +643,7 @@
                             <td><img src="images/success.png" title="SUCCESS"
                                      class="summary-icon"/><span style="display:none">SUCCESS</span></td>
                             <td class="SUCCESS-text"><a
-                                    href="87a3e5fe7d4947623473fd6aa7f8075619f2c547d9830d2bfd223156ae588095.html" title="">Searching by keyword banana should display the corresponding article </a>
+                                    href="3b08ee4492f0394f4a1c793a73fd99a99b033e2c90df9c5ef1f25a5b36018e6c.html" title="">C external key deletion </a>
                             </td>
 
                             <td class="lightgreentext">5</td>
@@ -504,7 +653,580 @@
                                      class="summary-icon"/>
                                 <span style="display:none">0</span>
                             </td>
-                            <td class="lightgreentext">9.62</td>
+                            <td class="lightgreentext">4.89</td>
+                        </tr>
+
+
+                        <tr class="test-ERROR">
+                            <td><img src="images/cross.png" title="ERROR"
+                                     class="summary-icon"/><span style="display:none">ERROR</span></td>
+                            <td class="ERROR-text"><a
+                                    href="7587e376785302efbfae231976715dda9a6dcbb91ea97c845955095c0a4ba7f8.html" title="Expected enabled element was not enabled
+Build info: version: '2.42.2', revision: '6a6995d31c7c56c340d6f45a76976d43506cd6cc', time: '2014-06-03 10:52:47'
+System info: host: 'user-ПК', ip: '172.16.3.37', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_11'
+Driver info: driver.version: unknown">C procedure group deletion </a>
+                            </td>
+
+                            <td class="lightgreentext">5</td>
+                            <td class="bluetext">
+                                <img src="images/traffic-in-progress.gif"
+                                     title="Over the last 0 tests: 0 passed, 0 failed, 0 pending"
+                                     class="summary-icon"/>
+                                <span style="display:none">0</span>
+                            </td>
+                            <td class="lightgreentext">32.53</td>
+                        </tr>
+
+
+                        <tr class="test-ERROR">
+                            <td><img src="images/cross.png" title="ERROR"
+                                     class="summary-icon"/><span style="display:none">ERROR</span></td>
+                            <td class="ERROR-text"><a
+                                    href="ce5eb161675cd926a73d6c686e2462ba0a99eed7b616bea598c658a3f00af323.html" title="Expected enabled element was not enabled
+Build info: version: '2.42.2', revision: '6a6995d31c7c56c340d6f45a76976d43506cd6cc', time: '2014-06-03 10:52:47'
+System info: host: 'user-ПК', ip: '172.16.3.37', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_11'
+Driver info: driver.version: unknown">C product group deletion </a>
+                            </td>
+
+                            <td class="lightgreentext">5</td>
+                            <td class="bluetext">
+                                <img src="images/traffic-in-progress.gif"
+                                     title="Over the last 0 tests: 0 passed, 0 failed, 0 pending"
+                                     class="summary-icon"/>
+                                <span style="display:none">0</span>
+                            </td>
+                            <td class="lightgreentext">32.57</td>
+                        </tr>
+
+
+                        <tr class="test-ERROR">
+                            <td><img src="images/cross.png" title="ERROR"
+                                     class="summary-icon"/><span style="display:none">ERROR</span></td>
+                            <td class="ERROR-text"><a
+                                    href="a9c7ac39c02ef3cf972ae1349dd039e7ab4a3a7e207f3d9bbcb4838b65b59104.html" title="Expected enabled element was not enabled
+Build info: version: '2.42.2', revision: '6a6995d31c7c56c340d6f45a76976d43506cd6cc', time: '2014-06-03 10:52:47'
+System info: host: 'user-ПК', ip: '172.16.3.37', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_11'
+Driver info: driver.version: unknown">C service region deletion </a>
+                            </td>
+
+                            <td class="lightgreentext">5</td>
+                            <td class="bluetext">
+                                <img src="images/traffic-in-progress.gif"
+                                     title="Over the last 0 tests: 0 passed, 0 failed, 0 pending"
+                                     class="summary-icon"/>
+                                <span style="display:none">0</span>
+                            </td>
+                            <td class="lightgreentext">30.51</td>
+                        </tr>
+
+
+                        <tr class="test-ERROR">
+                            <td><img src="images/cross.png" title="ERROR"
+                                     class="summary-icon"/><span style="display:none">ERROR</span></td>
+                            <td class="ERROR-text"><a
+                                    href="8238d9f23b28f26d3e2f26f29fe4c6272d11f215b348d36c41021cba67fe2e29.html" title="Expected enabled element was not enabled
+Build info: version: '2.42.2', revision: '6a6995d31c7c56c340d6f45a76976d43506cd6cc', time: '2014-06-03 10:52:47'
+System info: host: 'user-ПК', ip: '172.16.3.37', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_11'
+Driver info: driver.version: unknown">Creation </a>
+                            </td>
+
+                            <td class="lightgreentext">10</td>
+                            <td class="bluetext">
+                                <img src="images/traffic-in-progress.gif"
+                                     title="Over the last 0 tests: 0 passed, 0 failed, 0 pending"
+                                     class="summary-icon"/>
+                                <span style="display:none">0</span>
+                            </td>
+                            <td class="lightgreentext">45.5</td>
+                        </tr>
+
+
+                        <tr class="test-SUCCESS">
+                            <td><img src="images/success.png" title="SUCCESS"
+                                     class="summary-icon"/><span style="display:none">SUCCESS</span></td>
+                            <td class="SUCCESS-text"><a
+                                    href="2d8cdfc7304982aeb1576533a58a749c094b8947c248d28658d3e303ab0fd2b6.html" title="">D diagnose group restoration </a>
+                            </td>
+
+                            <td class="lightgreentext">1</td>
+                            <td class="bluetext">
+                                <img src="images/traffic-in-progress.gif"
+                                     title="Over the last 0 tests: 0 passed, 0 failed, 0 pending"
+                                     class="summary-icon"/>
+                                <span style="display:none">0</span>
+                            </td>
+                            <td class="lightgreentext">1.17</td>
+                        </tr>
+
+
+                        <tr class="test-SUCCESS">
+                            <td><img src="images/success.png" title="SUCCESS"
+                                     class="summary-icon"/><span style="display:none">SUCCESS</span></td>
+                            <td class="SUCCESS-text"><a
+                                    href="2348229e65f2f0b73718fb4fde9eba018ae7d73ed3a816240805e77e54c76e36.html" title="">D external key restoration </a>
+                            </td>
+
+                            <td class="lightgreentext">1</td>
+                            <td class="bluetext">
+                                <img src="images/traffic-in-progress.gif"
+                                     title="Over the last 0 tests: 0 passed, 0 failed, 0 pending"
+                                     class="summary-icon"/>
+                                <span style="display:none">0</span>
+                            </td>
+                            <td class="lightgreentext">0.89</td>
+                        </tr>
+
+
+                        <tr class="test-SUCCESS">
+                            <td><img src="images/success.png" title="SUCCESS"
+                                     class="summary-icon"/><span style="display:none">SUCCESS</span></td>
+                            <td class="SUCCESS-text"><a
+                                    href="5437c7d72f7b1bb6dcacdb7c2a670bf4e48f2e2d5128f2dc534f1568aea58ab4.html" title="">D procedure group restoration </a>
+                            </td>
+
+                            <td class="lightgreentext">1</td>
+                            <td class="bluetext">
+                                <img src="images/traffic-in-progress.gif"
+                                     title="Over the last 0 tests: 0 passed, 0 failed, 0 pending"
+                                     class="summary-icon"/>
+                                <span style="display:none">0</span>
+                            </td>
+                            <td class="lightgreentext">0.74</td>
+                        </tr>
+
+
+                        <tr class="test-ERROR">
+                            <td><img src="images/cross.png" title="ERROR"
+                                     class="summary-icon"/><span style="display:none">ERROR</span></td>
+                            <td class="ERROR-text"><a
+                                    href="19adf1431980c2b6dd47eea0f89005ea957cd1c4aba3dbb19ebc6143ad5c5e60.html" title="[JavaScript Error: "e is null" {file: "file:///C:/Users/natalia/AppData/Local/Temp/anonymous937837417821671282webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js" line: 7716}]'[JavaScript Error: "e is null" {file: "file:///C:/Users/natalia/AppData/Local/Temp/anonymous937837417821671282webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js" line: 7716}]' when calling method: [nsICommandProcessor::execute]
+Command duration or timeout: 25 milliseconds
+Build info: version: '2.42.2', revision: '6a6995d31c7c56c340d6f45a76976d43506cd6cc', time: '2014-06-03 10:52:47'
+System info: host: 'user-ПК', ip: '172.16.3.37', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_11'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.0, platform=XP, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: ae4e15c9-7a48-4b4b-b141-8ec5e0384daa">D product group restoration </a>
+                            </td>
+
+                            <td class="lightgreentext">2</td>
+                            <td class="bluetext">
+                                <img src="images/traffic-in-progress.gif"
+                                     title="Over the last 0 tests: 0 passed, 0 failed, 0 pending"
+                                     class="summary-icon"/>
+                                <span style="display:none">0</span>
+                            </td>
+                            <td class="lightgreentext">0.99</td>
+                        </tr>
+
+
+                        <tr class="test-ERROR">
+                            <td><img src="images/cross.png" title="ERROR"
+                                     class="summary-icon"/><span style="display:none">ERROR</span></td>
+                            <td class="ERROR-text"><a
+                                    href="ac4f8fe1a72d778a2210059a3b441e17dfebbef2464f73b6b76463b7b044ef91.html" title="Expected enabled element was not enabled
+Build info: version: '2.42.2', revision: '6a6995d31c7c56c340d6f45a76976d43506cd6cc', time: '2014-06-03 10:52:47'
+System info: host: 'user-ПК', ip: '172.16.3.37', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_11'
+Driver info: driver.version: unknown">D service region restoration </a>
+                            </td>
+
+                            <td class="lightgreentext">1</td>
+                            <td class="bluetext">
+                                <img src="images/traffic-in-progress.gif"
+                                     title="Over the last 0 tests: 0 passed, 0 failed, 0 pending"
+                                     class="summary-icon"/>
+                                <span style="display:none">0</span>
+                            </td>
+                            <td class="lightgreentext">30.53</td>
+                        </tr>
+
+
+                        <tr class="test-ERROR">
+                            <td><img src="images/cross.png" title="ERROR"
+                                     class="summary-icon"/><span style="display:none">ERROR</span></td>
+                            <td class="ERROR-text"><a
+                                    href="86529be45751af0c9e6031b8ec2cf29705df466a9ec28ee290bc79d87325cc80.html" title="Expected enabled element was not enabled
+Build info: version: '2.42.2', revision: '6a6995d31c7c56c340d6f45a76976d43506cd6cc', time: '2014-06-03 10:52:47'
+System info: host: 'user-ПК', ip: '172.16.3.37', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_11'
+Driver info: driver.version: unknown">Diagnoses creation </a>
+                            </td>
+
+                            <td class="lightgreentext">7</td>
+                            <td class="bluetext">
+                                <img src="images/traffic-in-progress.gif"
+                                     title="Over the last 0 tests: 0 passed, 0 failed, 0 pending"
+                                     class="summary-icon"/>
+                                <span style="display:none">0</span>
+                            </td>
+                            <td class="lightgreentext">61.88</td>
+                        </tr>
+
+
+                        <tr class="test-ERROR">
+                            <td><img src="images/cross.png" title="ERROR"
+                                     class="summary-icon"/><span style="display:none">ERROR</span></td>
+                            <td class="ERROR-text"><a
+                                    href="6d0d7adac91432ac2deb13b9f970a2d52d42051fe29d16333df08540418245ee.html" title="Expected enabled element was not enabled
+Build info: version: '2.42.2', revision: '6a6995d31c7c56c340d6f45a76976d43506cd6cc', time: '2014-06-03 10:52:47'
+System info: host: 'user-ПК', ip: '172.16.3.37', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_11'
+Driver info: driver.version: unknown">Diagnoses deletion </a>
+                            </td>
+
+                            <td class="lightgreentext">5</td>
+                            <td class="bluetext">
+                                <img src="images/traffic-in-progress.gif"
+                                     title="Over the last 0 tests: 0 passed, 0 failed, 0 pending"
+                                     class="summary-icon"/>
+                                <span style="display:none">0</span>
+                            </td>
+                            <td class="lightgreentext">30.75</td>
+                        </tr>
+
+
+                        <tr class="test-ERROR">
+                            <td><img src="images/cross.png" title="ERROR"
+                                     class="summary-icon"/><span style="display:none">ERROR</span></td>
+                            <td class="ERROR-text"><a
+                                    href="efecb20510bd5ecd6468371222995eac792d28d8ba94c4105ac396e28d303849.html" title="Expected enabled element was not enabled
+Build info: version: '2.42.2', revision: '6a6995d31c7c56c340d6f45a76976d43506cd6cc', time: '2014-06-03 10:52:47'
+System info: host: 'user-ПК', ip: '172.16.3.37', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_11'
+Driver info: driver.version: unknown">Diagnoses restoration </a>
+                            </td>
+
+                            <td class="lightgreentext">1</td>
+                            <td class="bluetext">
+                                <img src="images/traffic-in-progress.gif"
+                                     title="Over the last 0 tests: 0 passed, 0 failed, 0 pending"
+                                     class="summary-icon"/>
+                                <span style="display:none">0</span>
+                            </td>
+                            <td class="lightgreentext">30.48</td>
+                        </tr>
+
+
+                        <tr class="test-ERROR">
+                            <td><img src="images/cross.png" title="ERROR"
+                                     class="summary-icon"/><span style="display:none">ERROR</span></td>
+                            <td class="ERROR-text"><a
+                                    href="819bf00d106e63874b6e30849a0c125407565f128eb47e46725d75b498fc7bae.html" title="Expected enabled element was not enabled
+Build info: version: '2.42.2', revision: '6a6995d31c7c56c340d6f45a76976d43506cd6cc', time: '2014-06-03 10:52:47'
+System info: host: 'user-ПК', ip: '172.16.3.37', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_11'
+Driver info: driver.version: unknown">Diagnoses update </a>
+                            </td>
+
+                            <td class="lightgreentext">6</td>
+                            <td class="bluetext">
+                                <img src="images/traffic-in-progress.gif"
+                                     title="Over the last 0 tests: 0 passed, 0 failed, 0 pending"
+                                     class="summary-icon"/>
+                                <span style="display:none">0</span>
+                            </td>
+                            <td class="lightgreentext">30.47</td>
+                        </tr>
+
+
+                        <tr class="test-ERROR">
+                            <td><img src="images/cross.png" title="ERROR"
+                                     class="summary-icon"/><span style="display:none">ERROR</span></td>
+                            <td class="ERROR-text"><a
+                                    href="9e05de81a96a0ddac8ff7fe756a212c1a171f455fcbe52a710b797350d578e5d.html" title="Expected enabled element was not enabled
+Build info: version: '2.42.2', revision: '6a6995d31c7c56c340d6f45a76976d43506cd6cc', time: '2014-06-03 10:52:47'
+System info: host: 'user-ПК', ip: '172.16.3.37', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_11'
+Driver info: driver.version: unknown">Disenrollment reason creation </a>
+                            </td>
+
+                            <td class="lightgreentext">7</td>
+                            <td class="bluetext">
+                                <img src="images/traffic-in-progress.gif"
+                                     title="Over the last 0 tests: 0 passed, 0 failed, 0 pending"
+                                     class="summary-icon"/>
+                                <span style="display:none">0</span>
+                            </td>
+                            <td class="lightgreentext">34.28</td>
+                        </tr>
+
+
+                        <tr class="test-ERROR">
+                            <td><img src="images/cross.png" title="ERROR"
+                                     class="summary-icon"/><span style="display:none">ERROR</span></td>
+                            <td class="ERROR-text"><a
+                                    href="5b466417834931a9c4346c72a8bd4952f0fae8206236230f9281693c620f757b.html" title="Expected enabled element was not enabled
+Build info: version: '2.42.2', revision: '6a6995d31c7c56c340d6f45a76976d43506cd6cc', time: '2014-06-03 10:52:47'
+System info: host: 'user-ПК', ip: '172.16.3.37', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_11'
+Driver info: driver.version: unknown">Disenrollment reason deletion </a>
+                            </td>
+
+                            <td class="lightgreentext">5</td>
+                            <td class="bluetext">
+                                <img src="images/traffic-in-progress.gif"
+                                     title="Over the last 0 tests: 0 passed, 0 failed, 0 pending"
+                                     class="summary-icon"/>
+                                <span style="display:none">0</span>
+                            </td>
+                            <td class="lightgreentext">74.05</td>
+                        </tr>
+
+
+                        <tr class="test-ERROR">
+                            <td><img src="images/cross.png" title="ERROR"
+                                     class="summary-icon"/><span style="display:none">ERROR</span></td>
+                            <td class="ERROR-text"><a
+                                    href="c4d2c3860c5c8d0985b5563aebba7b86a9c91a087b122d515674e441b3c0ca27.html" title="Expected enabled element was not enabled
+Build info: version: '2.42.2', revision: '6a6995d31c7c56c340d6f45a76976d43506cd6cc', time: '2014-06-03 10:52:47'
+System info: host: 'user-ПК', ip: '172.16.3.37', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_11'
+Driver info: driver.version: unknown">Disenrollment reason restoration </a>
+                            </td>
+
+                            <td class="lightgreentext">1</td>
+                            <td class="bluetext">
+                                <img src="images/traffic-in-progress.gif"
+                                     title="Over the last 0 tests: 0 passed, 0 failed, 0 pending"
+                                     class="summary-icon"/>
+                                <span style="display:none">0</span>
+                            </td>
+                            <td class="lightgreentext">30.52</td>
+                        </tr>
+
+
+                        <tr class="test-ERROR">
+                            <td><img src="images/cross.png" title="ERROR"
+                                     class="summary-icon"/><span style="display:none">ERROR</span></td>
+                            <td class="ERROR-text"><a
+                                    href="3f01371e1f34029b1bcf24fd55090148330f92a36963a1bd8df3174189741260.html" title="Expected enabled element was not enabled
+Build info: version: '2.42.2', revision: '6a6995d31c7c56c340d6f45a76976d43506cd6cc', time: '2014-06-03 10:52:47'
+System info: host: 'user-ПК', ip: '172.16.3.37', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_11'
+Driver info: driver.version: unknown">Disenrollment reason update </a>
+                            </td>
+
+                            <td class="lightgreentext">6</td>
+                            <td class="bluetext">
+                                <img src="images/traffic-in-progress.gif"
+                                     title="Over the last 0 tests: 0 passed, 0 failed, 0 pending"
+                                     class="summary-icon"/>
+                                <span style="display:none">0</span>
+                            </td>
+                            <td class="lightgreentext">31.64</td>
+                        </tr>
+
+
+                        <tr class="test-SUCCESS">
+                            <td><img src="images/success.png" title="SUCCESS"
+                                     class="summary-icon"/><span style="display:none">SUCCESS</span></td>
+                            <td class="SUCCESS-text"><a
+                                    href="0fce6ee02c0bb1a900f541ab331e3b688fb3dcf396839fff3e7554303b622058.html" title="">Entering of correct credentials should open application </a>
+                            </td>
+
+                            <td class="lightgreentext">4</td>
+                            <td class="bluetext">
+                                <img src="images/traffic-in-progress.gif"
+                                     title="Over the last 0 tests: 0 passed, 0 failed, 0 pending"
+                                     class="summary-icon"/>
+                                <span style="display:none">0</span>
+                            </td>
+                            <td class="lightgreentext">6.48</td>
+                        </tr>
+
+
+                        <tr class="test-SUCCESS">
+                            <td><img src="images/success.png" title="SUCCESS"
+                                     class="summary-icon"/><span style="display:none">SUCCESS</span></td>
+                            <td class="SUCCESS-text"><a
+                                    href="28a770dc065b3d7e25afdcf154ddd119dc7ae48bdbf50c14f167674fca36429e.html" title="">Entering of correct credentials should open application </a>
+                            </td>
+
+                            <td class="lightgreentext">3</td>
+                            <td class="bluetext">
+                                <img src="images/traffic-in-progress.gif"
+                                     title="Over the last 0 tests: 0 passed, 0 failed, 0 pending"
+                                     class="summary-icon"/>
+                                <span style="display:none">0</span>
+                            </td>
+                            <td class="lightgreentext">5.17</td>
+                        </tr>
+
+
+                        <tr class="test-SUCCESS">
+                            <td><img src="images/success.png" title="SUCCESS"
+                                     class="summary-icon"/><span style="display:none">SUCCESS</span></td>
+                            <td class="SUCCESS-text"><a
+                                    href="4885f503307ef935cb5112d8cba50fe1de5bb1c62e35444ee71ddeed5d112b5c.html" title="">Entering of correct credentials should open application </a>
+                            </td>
+
+                            <td class="lightgreentext">3</td>
+                            <td class="bluetext">
+                                <img src="images/traffic-in-progress.gif"
+                                     title="Over the last 0 tests: 0 passed, 0 failed, 0 pending"
+                                     class="summary-icon"/>
+                                <span style="display:none">0</span>
+                            </td>
+                            <td class="lightgreentext">5.08</td>
+                        </tr>
+
+
+                        <tr class="test-SUCCESS">
+                            <td><img src="images/success.png" title="SUCCESS"
+                                     class="summary-icon"/><span style="display:none">SUCCESS</span></td>
+                            <td class="SUCCESS-text"><a
+                                    href="e0532899b30f66656108fb68d60751035c9bdc63d39a9ff241d60edf8690eb86.html" title="">Entering of correct credentials should open application </a>
+                            </td>
+
+                            <td class="lightgreentext">3</td>
+                            <td class="bluetext">
+                                <img src="images/traffic-in-progress.gif"
+                                     title="Over the last 0 tests: 0 passed, 0 failed, 0 pending"
+                                     class="summary-icon"/>
+                                <span style="display:none">0</span>
+                            </td>
+                            <td class="lightgreentext">11.79</td>
+                        </tr>
+
+
+                        <tr class="test-ERROR">
+                            <td><img src="images/cross.png" title="ERROR"
+                                     class="summary-icon"/><span style="display:none">ERROR</span></td>
+                            <td class="ERROR-text"><a
+                                    href="c3652b55b6e39ea250e34704acce8804ef3e1e5acbed707a0e034b5cf6c15350.html" title="Expected enabled element was not enabled
+Build info: version: '2.42.2', revision: '6a6995d31c7c56c340d6f45a76976d43506cd6cc', time: '2014-06-03 10:52:47'
+System info: host: 'user-ПК', ip: '172.16.3.37', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_11'
+Driver info: driver.version: unknown">Termination reason creation </a>
+                            </td>
+
+                            <td class="lightgreentext">10</td>
+                            <td class="bluetext">
+                                <img src="images/traffic-in-progress.gif"
+                                     title="Over the last 0 tests: 0 passed, 0 failed, 0 pending"
+                                     class="summary-icon"/>
+                                <span style="display:none">0</span>
+                            </td>
+                            <td class="lightgreentext">68.56</td>
+                        </tr>
+
+
+                        <tr class="test-ERROR">
+                            <td><img src="images/cross.png" title="ERROR"
+                                     class="summary-icon"/><span style="display:none">ERROR</span></td>
+                            <td class="ERROR-text"><a
+                                    href="699ee02ab593aab0a2afbf5b699a2952110f4049388b6f516e16feb1576e944e.html" title="Timed out after 30 seconds waiting for net.thucydides.core.pages.WebElementFacadeImpl$1@7d38c889
+Build info: version: '2.42.2', revision: '6a6995d31c7c56c340d6f45a76976d43506cd6cc', time: '2014-06-03 10:52:47'
+System info: host: 'user-ПК', ip: '172.16.3.37', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_11'
+Driver info: driver.version: unknown
+Build info: version: '2.42.2', revision: '6a6995d31c7c56c340d6f45a76976d43506cd6cc', time: '2014-06-03 10:52:47'
+System info: host: 'user-ПК', ip: '172.16.3.37', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_11'
+Driver info: driver.version: unknown">Termination reason deletion </a>
+                            </td>
+
+                            <td class="lightgreentext">5</td>
+                            <td class="bluetext">
+                                <img src="images/traffic-in-progress.gif"
+                                     title="Over the last 0 tests: 0 passed, 0 failed, 0 pending"
+                                     class="summary-icon"/>
+                                <span style="display:none">0</span>
+                            </td>
+                            <td class="lightgreentext">33.9</td>
+                        </tr>
+
+
+                        <tr class="test-ERROR">
+                            <td><img src="images/cross.png" title="ERROR"
+                                     class="summary-icon"/><span style="display:none">ERROR</span></td>
+                            <td class="ERROR-text"><a
+                                    href="84ad1e7c24040cfbec888d04d24f2ccfd963edc5bc2656fec81fb3b7594218bf.html" title="Expected enabled element was not enabled
+Build info: version: '2.42.2', revision: '6a6995d31c7c56c340d6f45a76976d43506cd6cc', time: '2014-06-03 10:52:47'
+System info: host: 'user-ПК', ip: '172.16.3.37', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_11'
+Driver info: driver.version: unknown">Termination reason restoration </a>
+                            </td>
+
+                            <td class="lightgreentext">1</td>
+                            <td class="bluetext">
+                                <img src="images/traffic-in-progress.gif"
+                                     title="Over the last 0 tests: 0 passed, 0 failed, 0 pending"
+                                     class="summary-icon"/>
+                                <span style="display:none">0</span>
+                            </td>
+                            <td class="lightgreentext">31.17</td>
+                        </tr>
+
+
+                        <tr class="test-ERROR">
+                            <td><img src="images/cross.png" title="ERROR"
+                                     class="summary-icon"/><span style="display:none">ERROR</span></td>
+                            <td class="ERROR-text"><a
+                                    href="2a5fee51232a5888e42f631e97b5e1f7130cd3541d4193425fa0bfa330084159.html" title="Expected enabled element was not enabled
+Build info: version: '2.42.2', revision: '6a6995d31c7c56c340d6f45a76976d43506cd6cc', time: '2014-06-03 10:52:47'
+System info: host: 'user-ПК', ip: '172.16.3.37', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_11'
+Driver info: driver.version: unknown">Termination reason update </a>
+                            </td>
+
+                            <td class="lightgreentext">6</td>
+                            <td class="bluetext">
+                                <img src="images/traffic-in-progress.gif"
+                                     title="Over the last 0 tests: 0 passed, 0 failed, 0 pending"
+                                     class="summary-icon"/>
+                                <span style="display:none">0</span>
+                            </td>
+                            <td class="lightgreentext">32.21</td>
+                        </tr>
+
+
+                        <tr class="test-ERROR">
+                            <td><img src="images/cross.png" title="ERROR"
+                                     class="summary-icon"/><span style="display:none">ERROR</span></td>
+                            <td class="ERROR-text"><a
+                                    href="3fae73bf192ef397099d0abe0be4d382f2259ff17b0641e15265b23d3e1e4ce4.html" title="Expected enabled element was not enabled
+Build info: version: '2.42.2', revision: '6a6995d31c7c56c340d6f45a76976d43506cd6cc', time: '2014-06-03 10:52:47'
+System info: host: 'user-ПК', ip: '172.16.3.37', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_11'
+Driver info: driver.version: unknown">delete </a>
+                            </td>
+
+                            <td class="lightgreentext">5</td>
+                            <td class="bluetext">
+                                <img src="images/traffic-in-progress.gif"
+                                     title="Over the last 0 tests: 0 passed, 0 failed, 0 pending"
+                                     class="summary-icon"/>
+                                <span style="display:none">0</span>
+                            </td>
+                            <td class="lightgreentext">52.49</td>
+                        </tr>
+
+
+                        <tr class="test-ERROR">
+                            <td><img src="images/cross.png" title="ERROR"
+                                     class="summary-icon"/><span style="display:none">ERROR</span></td>
+                            <td class="ERROR-text"><a
+                                    href="8e003201eb8073e180107c066d456f466d7aef5ad74b87e5a1cb367db6974cd1.html" title="Expected enabled element was not enabled
+Build info: version: '2.42.2', revision: '6a6995d31c7c56c340d6f45a76976d43506cd6cc', time: '2014-06-03 10:52:47'
+System info: host: 'user-ПК', ip: '172.16.3.37', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_11'
+Driver info: driver.version: unknown">restore </a>
+                            </td>
+
+                            <td class="lightgreentext">1</td>
+                            <td class="bluetext">
+                                <img src="images/traffic-in-progress.gif"
+                                     title="Over the last 0 tests: 0 passed, 0 failed, 0 pending"
+                                     class="summary-icon"/>
+                                <span style="display:none">0</span>
+                            </td>
+                            <td class="lightgreentext">31.14</td>
+                        </tr>
+
+
+                        <tr class="test-ERROR">
+                            <td><img src="images/cross.png" title="ERROR"
+                                     class="summary-icon"/><span style="display:none">ERROR</span></td>
+                            <td class="ERROR-text"><a
+                                    href="cb17574a4a0fa5d353c5da40e2433469f67ded313bb4be0bf8934657b6e64b9e.html" title="Expected enabled element was not enabled
+Build info: version: '2.42.2', revision: '6a6995d31c7c56c340d6f45a76976d43506cd6cc', time: '2014-06-03 10:52:47'
+System info: host: 'user-ПК', ip: '172.16.3.37', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_11'
+Driver info: driver.version: unknown">update </a>
+                            </td>
+
+                            <td class="lightgreentext">5</td>
+                            <td class="bluetext">
+                                <img src="images/traffic-in-progress.gif"
+                                     title="Over the last 0 tests: 0 passed, 0 failed, 0 pending"
+                                     class="summary-icon"/>
+                                <span style="display:none">0</span>
+                            </td>
+                            <td class="lightgreentext">30.93</td>
                         </tr>
                     </tbody>
                 </table>

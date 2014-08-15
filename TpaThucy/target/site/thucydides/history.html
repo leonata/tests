@@ -222,6 +222,78 @@
 
 
 
+        var date = new Date(2014, 7, 8,13, 38, 35);
+
+        specified.push([date, 49]);
+        done.push([date,44]);
+        skipped.push([date,5]);
+        failing.push([date,0]);
+
+
+
+        var date = new Date(2014, 7, 8,14, 57, 21);
+
+        specified.push([date, 53]);
+        done.push([date,53]);
+        skipped.push([date,0]);
+        failing.push([date,0]);
+
+
+
+        var date = new Date(2014, 7, 13,11, 9, 58);
+
+        specified.push([date, 285]);
+        done.push([date,98]);
+        skipped.push([date,187]);
+        failing.push([date,0]);
+
+
+
+        var date = new Date(2014, 7, 13,13, 18, 2);
+
+        specified.push([date, 460]);
+        done.push([date,140]);
+        skipped.push([date,320]);
+        failing.push([date,0]);
+
+
+
+        var date = new Date(2014, 7, 13,16, 12, 32);
+
+        specified.push([date, 453]);
+        done.push([date,97]);
+        skipped.push([date,356]);
+        failing.push([date,0]);
+
+
+
+        var date = new Date(2014, 7, 13,16, 23, 53);
+
+        specified.push([date, 460]);
+        done.push([date,227]);
+        skipped.push([date,233]);
+        failing.push([date,0]);
+
+
+
+        var date = new Date(2014, 7, 14,15, 56, 18);
+
+        specified.push([date, 487]);
+        done.push([date,168]);
+        skipped.push([date,317]);
+        failing.push([date,2]);
+
+
+
+        var date = new Date(2014, 7, 14,16, 5, 49);
+
+        specified.push([date, 232]);
+        done.push([date,45]);
+        skipped.push([date,187]);
+        failing.push([date,0]);
+
+
+
 
         targetPlot = $.jqplot('chart_div', [failing,skipped,done,specified], {
 
@@ -240,8 +312,8 @@
 
                 yaxis : {
                     min: 0,
-                    max: 52,
-                    tickInterval: 52 / 5,
+                    max: 487,
+                    tickInterval: 487 / 5,
                     tickOptions: {formatString: '%d' }
                 }
 
@@ -306,8 +378,8 @@
                 yaxis : {
 				show:false,
                     min: 0,
-                    max: 52,
-                    tickInterval: 52 / 5,
+                    max: 487,
+                    tickInterval: 487 / 5,
                     tickOptions: {formatString: '%d' }
                 }
             } //axes
@@ -349,7 +421,7 @@
         <li><a href="index.html" >Overall Test Results</a></li>
         <li><a href="capabilities.html" >Requirements</a></li>
     </ul>
-    <span class="date-and-time">Report generated 08-08-2014 09:55</span>
+    <span class="date-and-time">Report generated 14-08-2014 16:05</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>

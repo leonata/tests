@@ -19,12 +19,12 @@ public class LoginPage extends PageObject {
     @FindBy(css="input.btn.btn-primary")
     private WebElementFacade logInButton;
 
-    public void enter_credentials(String credentials) {
+    public void enterCredentials(String credentials) {
     	userField.type(credentials);
     	passwordField.type(credentials);
     }
 
-    public void logInButton_click() {
+    public void logInButtonClick() {
     	logInButton.click();
     }
 

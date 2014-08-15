@@ -5,8 +5,6 @@ import net.thucydides.core.annotations.findby.FindBy;
 import net.thucydides.core.pages.PageObject;
 import net.thucydides.core.pages.WebElementFacade;
 
-import org.openqa.selenium.By;
-
 @DefaultUrl("http://tpa.smiss.ua")
 public class HomePage extends PageObject{
 
